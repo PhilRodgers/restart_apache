@@ -3,7 +3,6 @@
 CONFIG="$1"
 COMMAND="$2"
 
-
 if [ $CONFIG  <> "000-default.conf" ]
 then
     if [ $CONFIG  <> "default-ssl.conf" ]
@@ -11,7 +10,6 @@ then
         exit 1
     fi
 fi
-
 
 if [ "$COMMAND" == "reload" ] || [ "$COMMAND" == "restart" ]
 then
